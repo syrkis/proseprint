@@ -1,22 +1,13 @@
 [tool.poetry]
-name = "mawsa"
+name = "proseprint"
 version = "0.1.0"
 description = ""
 authors = ["Noah Syrkis <noah@syrkis.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
-jax = "^0.4.10"
-optax = "^0.1.5"
-dm-haiku = "^0.0.9"
-xgboost = "^1.7.5"
-tqdm = "^4.65.0"
-seaborn = "^0.12.2"
-jupyterlab = "^4.0.0"
-scikit-learn = "^1.2.2"
-wandb = "^0.15.2"
-transformers = "^4.29.2"
+python = "^3.9"
+torch = "^1.7.0"
 
 
 [build-system]
