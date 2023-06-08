@@ -19,8 +19,7 @@ COPY requirements.txt .
 
 RUN python3.10 -m pip install -r requirements.txt
 
-RUN poetry 3.10 -m pip install torch==1.10.1+cu111 \
+RUN python3.10 -m pip install torch==1.10.1+cu111 \
     -f https://download.pytorch.org/whl/cu111/torch_stable.html
-
 
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.10 1
