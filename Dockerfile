@@ -6,26 +6,23 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -y curl software-properties-common && \
-    add-apt-repository ppa:deadsnakes/ppa
-
-RUN apt-get update && \
+    add-apt-repository ppa:deadsnakes/ppa && \
+    apt-get update && \
     apt-get install -y \
-    python3.9 python3.9-distutils python3.9-dev
-
-RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
-    python3.9 get-pip.py --force-reinstall
-
-RUN apt-get clean && \
+    python3.9 python3.9-distutils python3.9-dev && \
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
+    python3.9 get-pip.py --force-reinstall && \
+    apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
 
-RUN python3.9 -m pip install -r requirements.txt
+RUN python3.9 -m pip install --no-cache-dir -r requirements.txt
 
-RUN python3.9 -m pip install torch==1.10.1+cu111 \
+RUN python3.9 -m pip install --no-cache-dir torch==1.10.1+cu111 \
     -f https://download.pytorch.org/whl/cu111/torch_stable.html
 
-RUN python3.9 -m pip install --upgrade \
+RUN python3.9 -m pip install --no-cache-dir --upgrade \
     "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1

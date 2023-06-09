@@ -2,7 +2,7 @@
 
 #SBATCH --partition brown,red
 #SBATCH --cpus-per-task=1
-#SBATCH --time 01:00:00
+#SBATCH --time 03:00:00
 #SBATCH --job-name jupyter-notebook
 #SBATCH --output logs/jupyter.log
 #SBATCH --gres=gpu:1              # :v100:1
