@@ -22,4 +22,7 @@ RUN python3.9 -m pip install -r requirements.txt
 RUN python3.9 -m pip install torch==1.10.1+cu111 \
     -f https://download.pytorch.org/whl/cu111/torch_stable.html
 
+RUN python3.9 -m pip install --upgrade \
+    "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
