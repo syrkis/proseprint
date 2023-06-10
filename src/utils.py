@@ -18,17 +18,19 @@ DATA_PATH = os.path.join(os.getcwd(), 'data/release/')
 DATASET_NAMES = [f'pan23-multi-author-analysis-dataset{i}' for i in range(1, 4)]
 
 # functions
-def get_data(dataset_id, transform_fn):
+def get_data(dataset_id):
     dataset = DATASET_NAMES[dataset_id - 1]
     data = {'train': None, 'validation': None}
     for split in data.keys():
         split_dir = os.path.join(DATA_PATH, dataset, dataset + '-' + split)
-        split_data = get_split_data(split_dir, transform_fn)
+        split_data = get_split_data(split_dir)
         data[split] = split_data
+    # rename validation to valid
+    data['valid'] = data.pop('validation')
     return data
 
 
-def get_split_data(split_dir, transform_fn):
+def get_split_data(split_dir):
     data = {}
     model = SentenceTransformer('all-MiniLM-L6-v2')
 
