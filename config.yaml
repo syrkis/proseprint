@@ -1,0 +1,82 @@
+dataset_1:
+  syntactic:
+    siamese:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+    recurrent:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+  semantic:
+    siamese:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+    recurrent:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+dataset_2:
+  syntactic:
+    siamese:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+    recurrent:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+  semantic:
+    siamese:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+    recurrent:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+dataset_3:
+  syntactic:
+    siamese:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+    recurrent:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+  semantic:
+    siamese:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+    recurrent:
+      lr: 0.0001
+      batch_size: 32
+      n_steps: 100000
+      hidden_dim: 512
+      dropout: 0.5
+
