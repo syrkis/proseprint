@@ -7,3 +7,4 @@ labml_app.log
 **/*.pth
 **/*.zip
 container.sif
+results/
