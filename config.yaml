@@ -1,82 +1,108 @@
-dataset_1:
-  syntactic:
-    siamese:
-      lr: 0.001
-      batch_size: 64
-      n_steps: 4000
-      hidden_dim: 32
-      dropout: 0.1
-    recurrent:
-      lr: 0.0001
-      batch_size: 64
-      n_steps: 6000
-      hidden_dim: 256
-      dropout: 0.1
-  semantic:
-    siamese:
-      lr: 0.0001
-      batch_size: 64
-      n_steps: 4000
-      hidden_dim: 256
-      dropout: 0.1
-    recurrent:
-      lr: 0.0001
-      batch_size: 32
-      n_steps: 4000
-      hidden_dim: 128
-      dropout: 0.3
-dataset_2:
-  syntactic:
-    siamese:
-      lr: 0.0001
-      batch_size: 64
-      n_steps: 6000
-      hidden_dim: 256
-      dropout: 0.2
-    recurrent:
-      lr: 0.001
-      batch_size: 16
-      n_steps: 2000
-      hidden_dim: 256
-      dropout: 0.1
-  semantic:
-    siamese:
-      lr: 0.0001
-      batch_size: 64
-      n_steps: 6000
-      hidden_dim: 256
-      dropout: 0.3
-    recurrent:
-      lr: 0.001
-      batch_size: 64
-      n_steps: 2000
-      hidden_dim: 64
-      dropout: 0.2
-dataset_3:
-  syntactic:
-    siamese:
-      lr: 0.001
-      batch_size: 64
-      n_steps: 4000
-      hidden_dim: 64
-      dropout: 0.3
-    recurrent:
-      lr: 0.0001
-      batch_size: 64
-      n_steps: 8000
-      hidden_dim: 128
-      dropout: 0.2
-  semantic:
-    siamese:
-      lr: 0.001
-      batch_size: 16
-      n_steps: 6000
-      hidden_dim: 256
-      dropout: 0.2
-    recurrent:
-      lr: 0.001
-      batch_size: 16
-      n_steps: 2000
-      hidden_dim: 64
-      dropout: 0.1
-
+dataset_1_RecurrentSiameseNet_both:
+  batch_size: 64
+  dropout: 0.1
+  hidden_dim: 256
+  lr: 0.0001
+  n_steps: 6000
+dataset_1_RecurrentSiameseNet_semantic:
+  batch_size: 64
+  dropout: 0.3
+  hidden_dim: 128
+  lr: 0.0001
+  n_steps: 4000
+dataset_1_RecurrentSiameseNet_syntactic:
+  batch_size: 32
+  dropout: 0.3
+  hidden_dim: 32
+  lr: 0.001
+  n_steps: 8000
+dataset_1_SiameseNet_both:
+  batch_size: 64
+  dropout: 0.1
+  hidden_dim: 256
+  lr: 0.0001
+  n_steps: 6000
+dataset_1_SiameseNet_semantic:
+  batch_size: 16
+  dropout: 0.1
+  hidden_dim: 64
+  lr: 0.001
+  n_steps: 4000
+dataset_1_SiameseNet_syntactic:
+  batch_size: 32
+  dropout: 0.2
+  hidden_dim: 128
+  lr: 0.001
+  n_steps: 8000
+dataset_2_RecurrentSiameseNet_both:
+  batch_size: 64
+  dropout: 0.3
+  hidden_dim: 32
+  lr: 0.001
+  n_steps: 4000
+dataset_2_RecurrentSiameseNet_semantic:
+  batch_size: 64
+  dropout: 0.3
+  hidden_dim: 32
+  lr: 0.0001
+  n_steps: 6000
+dataset_2_RecurrentSiameseNet_syntactic:
+  batch_size: 32
+  dropout: 0.2
+  hidden_dim: 128
+  lr: 0.0001
+  n_steps: 8000
+dataset_2_SiameseNet_both:
+  batch_size: 32
+  dropout: 0.2
+  hidden_dim: 128
+  lr: 0.001
+  n_steps: 6000
+dataset_2_SiameseNet_semantic:
+  batch_size: 16
+  dropout: 0.2
+  hidden_dim: 64
+  lr: 0.001
+  n_steps: 8000
+dataset_2_SiameseNet_syntactic:
+  batch_size: 32
+  dropout: 0.1
+  hidden_dim: 128
+  lr: 0.001
+  n_steps: 8000
+dataset_3_RecurrentSiameseNet_both:
+  batch_size: 32
+  dropout: 0.1
+  hidden_dim: 128
+  lr: 0.0001
+  n_steps: 4000
+dataset_3_RecurrentSiameseNet_semantic:
+  batch_size: 16
+  dropout: 0.2
+  hidden_dim: 32
+  lr: 0.001
+  n_steps: 2000
+dataset_3_RecurrentSiameseNet_syntactic:
+  batch_size: 16
+  dropout: 0.2
+  hidden_dim: 256
+  lr: 0.0001
+  n_steps: 8000
+dataset_3_SiameseNet_both:
+  batch_size: 64
+  dropout: 0.1
+  hidden_dim: 64
+  lr: 0.001
+  n_steps: 4000
+dataset_3_SiameseNet_semantic:
+  batch_size: 64
+  dropout: 0.3
+  hidden_dim: 128
+  lr: 0.001
+  n_steps: 4000
+dataset_3_SiameseNet_syntactic:
+  batch_size: 32
+  dropout: 0.2
+  hidden_dim: 256
+  lr: 0.0001
+  n_steps: 6000
