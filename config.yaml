@@ -1,82 +1,82 @@
 dataset_1:
   syntactic:
     siamese:
-      lr: 0.0001
-      batch_size: 32
-      n_steps: 2000
-      hidden_dim: 64
-      dropout: 0.2
+      lr: 0.001
+      batch_size: 64
+      n_steps: 4000
+      hidden_dim: 32
+      dropout: 0.1
     recurrent:
       lr: 0.0001
-      batch_size: 32
-      n_steps: 2000
-      hidden_dim: 64
-      dropout: 0.2
+      batch_size: 64
+      n_steps: 6000
+      hidden_dim: 256
+      dropout: 0.1
   semantic:
     siamese:
       lr: 0.0001
-      batch_size: 32
-      n_steps: 2000
-      hidden_dim: 64
-      dropout: 0.2
+      batch_size: 64
+      n_steps: 4000
+      hidden_dim: 256
+      dropout: 0.1
     recurrent:
       lr: 0.0001
       batch_size: 32
-      n_steps: 2000
-      hidden_dim: 64
-      dropout: 0.2
+      n_steps: 4000
+      hidden_dim: 128
+      dropout: 0.3
 dataset_2:
   syntactic:
     siamese:
       lr: 0.0001
-      batch_size: 32
-      n_steps: 2000
-      hidden_dim: 64
+      batch_size: 64
+      n_steps: 6000
+      hidden_dim: 256
       dropout: 0.2
     recurrent:
-      lr: 0.0001
-      batch_size: 32
+      lr: 0.001
+      batch_size: 16
       n_steps: 2000
-      hidden_dim: 64
-      dropout: 0.2
+      hidden_dim: 256
+      dropout: 0.1
   semantic:
     siamese:
       lr: 0.0001
-      batch_size: 32
-      n_steps: 2000
-      hidden_dim: 64
-      dropout: 0.2
+      batch_size: 64
+      n_steps: 6000
+      hidden_dim: 256
+      dropout: 0.3
     recurrent:
-      lr: 0.0001
-      batch_size: 32
+      lr: 0.001
+      batch_size: 64
       n_steps: 2000
       hidden_dim: 64
       dropout: 0.2
 dataset_3:
   syntactic:
     siamese:
-      lr: 0.0001
-      batch_size: 32
-      n_steps: 2000
+      lr: 0.001
+      batch_size: 64
+      n_steps: 4000
       hidden_dim: 64
-      dropout: 0.2
+      dropout: 0.3
     recurrent:
       lr: 0.0001
-      batch_size: 32
-      n_steps: 2000
-      hidden_dim: 64
+      batch_size: 64
+      n_steps: 8000
+      hidden_dim: 128
       dropout: 0.2
   semantic:
     siamese:
-      lr: 0.0001
-      batch_size: 32
-      n_steps: 2000
-      hidden_dim: 64
+      lr: 0.001
+      batch_size: 16
+      n_steps: 6000
+      hidden_dim: 256
       dropout: 0.2
     recurrent:
-      lr: 0.0001
-      batch_size: 32
+      lr: 0.001
+      batch_size: 16
       n_steps: 2000
       hidden_dim: 64
-      dropout: 0.2
+      dropout: 0.1
 
