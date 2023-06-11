@@ -1,6 +1,5 @@
 data/
 wandb/
-*.pdf
 logs/
 __pycache__/
 labml_app.log
