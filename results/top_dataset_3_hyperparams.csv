@@ -1,0 +1,5 @@
+model,syntax,lr,dropout,hidden_dim,batch_size,n_steps,train_loss,train_f1,train_acc,valid_loss,valid_f1,valid_acc
+SiameseNet,False,0.001,0.3,64.0,64.0,4000.0,0.5843,0.6969,0.6981,0.8402,0.6564,0.5463
+RecurrentSiameseNet,True,0.001,0.1,64.0,16.0,2000.0,0.6479,0.6145,0.6184,0.6704,0.6164,0.5936
+SiameseNet,True,0.001,0.2,256.0,16.0,6000.0,0.688,0.6044,0.5482,0.6853,0.6084,0.5389
+RecurrentSiameseNet,False,0.0001,0.2,128.0,64.0,8000.0,0.6443,0.5717,0.6214,0.6714,0.5846,0.6096
